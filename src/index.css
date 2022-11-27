@@ -7,3 +7,17 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f8;
 }
+.dash {
+  position: relative;
+  font-size: 25px;
+  padding-left: 85px;
+}
+.dash::before {
+  position: absolute;
+  content: " ";
+  width: 70px;
+  height: 1px;
+  background-color: rgb(102, 102, 102);
+  left: 0;
+  top: 1rem;
+}

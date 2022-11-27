@@ -1,5 +1,6 @@
 import { FiGithub, FiInstagram } from "react-icons/fi";
 import { RiFacebookCircleLine } from "react-icons/ri";
+import { TbSend } from "react-icons/tb";
 import "./App.css";
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         </div>
       </nav>
       <section className="flex my-40">
-        <div className="h-screen flex flex-col items-center">
+        <div className="flex items-center">
           {/* -----icons----- */}
           <div className="flex flex-col gap-10 text-2xl mr-20">
             <span>
@@ -33,13 +34,23 @@ function App() {
         <section className="mx-20 flex ">
           <div className="w-1/2 my-20">
             <h1 className="text-4xl font-bold">Mohammed Abu Hanifa</h1>
-            <p className="text-2xl font-semibold my-2">Web Developer</p>
+            <p className="text-2xl font-semibold my-2 dash">Web Developer</p>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illo incidunt autem quia optio soluta atque corrupti! Provident accusamus id omnis harum nesciunt blanditiis facilis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus illo incidunt autem quia optio soluta atque corrupti!
+              Provident accusamus id omnis harum nesciunt blanditiis facilis.
             </p>
+            <button className="px-10 py-5 rounded-2xl bg-gray-700 text-gray-100 my-5 ">
+              Say Hello
+              <TbSend className="inline mx-2 text-2xl" />
+            </button>
           </div>
           <div className="w-1/2 px-20">
-            <img src="https://avatars.githubusercontent.com/u/90899296?v=4" alt="" className="w-96 rounded-xl"/>
+            <img
+              src="https://avatars.githubusercontent.com/u/90899296?v=4"
+              alt=""
+              className="w-96 rounded-xl"
+            />
           </div>
         </section>
       </section>
