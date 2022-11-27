@@ -1,5 +1,6 @@
+import { FiGithub, FiInstagram } from "react-icons/fi";
+import { RiFacebookCircleLine } from "react-icons/ri";
 import "./App.css";
-
 function App() {
   return (
     <div className="mx-40 my-10">
@@ -15,9 +16,19 @@ function App() {
         </div>
       </nav>
       <section>
-        <div>
+        <div className="my-40">
           {/* -----icons----- */}
-
+          <div className="flex flex-col gap-10 text-2xl">
+            <span>
+              <FiInstagram />
+            </span>
+            <span>
+              <FiGithub />
+            </span>
+            <span>
+              <RiFacebookCircleLine />
+            </span>
+          </div>
         </div>
       </section>
     </div>
