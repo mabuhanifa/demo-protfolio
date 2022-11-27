@@ -14,6 +14,12 @@ function App() {
           <a href="/">Contact</a>
         </div>
       </nav>
+      <section>
+        <div>
+          {/* -----icons----- */}
+
+        </div>
+      </section>
     </div>
   );
 }
