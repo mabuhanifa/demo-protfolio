@@ -15,10 +15,10 @@ function App() {
           <a href="/">Contact</a>
         </div>
       </nav>
-      <section>
-        <div className="my-40">
+      <section className="flex my-40">
+        <div className="h-screen flex flex-col items-center">
           {/* -----icons----- */}
-          <div className="flex flex-col gap-10 text-2xl">
+          <div className="flex flex-col gap-10 text-2xl mr-20">
             <span>
               <FiInstagram />
             </span>
@@ -30,6 +30,18 @@ function App() {
             </span>
           </div>
         </div>
+        <section className="mx-20 flex ">
+          <div className="w-1/2 my-20">
+            <h1 className="text-4xl font-bold">Mohammed Abu Hanifa</h1>
+            <p className="text-2xl font-semibold my-2">Web Developer</p>
+            <p className="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illo incidunt autem quia optio soluta atque corrupti! Provident accusamus id omnis harum nesciunt blanditiis facilis.
+            </p>
+          </div>
+          <div className="w-1/2 px-20">
+            <img src="https://avatars.githubusercontent.com/u/90899296?v=4" alt="" className="w-96 rounded-xl"/>
+          </div>
+        </section>
       </section>
     </div>
   );
