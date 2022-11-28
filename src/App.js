@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { BsSun } from "react-icons/bs";
+import { FaMoon } from "react-icons/fa";
 import { FiGithub, FiInstagram } from "react-icons/fi";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { TbSend } from "react-icons/tb";
 import "./App.css";
 function App() {
+  const [night, setNight] = useState(false);
   return (
     <div className="mx-40 my-10">
       <nav className="flex justify-between text-[#323231] font-semibold">
@@ -14,6 +18,16 @@ function App() {
           <a href="/">Service</a>
           <a href="/">Portfolio</a>
           <a href="/">Contact</a>
+          <div
+            className="flex justify-center items-center cursor-pointer "
+            onClick={() => setNight(!night)}
+          >
+            {night ? (
+              <FaMoon className="inline text-2xl" />
+            ) : (
+              <BsSun className="inline text-2xl" />
+            )}
+          </div>
         </div>
       </nav>
       <section className="flex my-40">
