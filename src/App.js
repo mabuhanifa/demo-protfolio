@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   const [night, setNight] = useState(false);
   return (
-    <div className="mx-40 my-10">
+    <div className="2xl:mx-40 xl:mx-20 my-10">
       <nav className="flex justify-between text-[#323231] font-semibold">
         <div>Abu Hanifa</div>
         <div className="flex justify-between gap-10">
@@ -46,7 +46,7 @@ function App() {
           </div>
         </div>
         <section className="mx-20 flex ">
-          <div className="w-1/2 my-20">
+          <div className="w-full my-20">
             <h1 className="text-4xl font-bold">Mohammed Abu Hanifa</h1>
             <p className="text-2xl font-semibold my-2 dash">Web Developer</p>
             <p className="text-gray-500">
@@ -59,7 +59,7 @@ function App() {
               <TbSend className="inline mx-2 text-2xl" />
             </button>
           </div>
-          <div className="w-1/2 px-20">
+          <div className="w-full flex justify-center items-center mx-10">
             <img
               src="https://avatars.githubusercontent.com/u/90899296?v=4"
               alt=""
