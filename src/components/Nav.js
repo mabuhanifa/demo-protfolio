@@ -6,9 +6,9 @@ export default function Nav() {
   const [night, setNight] = useState(false);
   return (
     <div >
-      <nav className="flex justify-between text-[#323231] font-semibold">
+      <nav className="flex flex-col sm:flex-row justify-between text-[#323231] font-semibold">
         <div>Abu Hanifa</div>
-        <div className="flex justify-between gap-10">
+        <div className="flex flex-col sm:flex-row justify-between gap-10">
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Skills</a>
