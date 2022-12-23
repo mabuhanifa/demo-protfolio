@@ -5,7 +5,7 @@ import { FaMoon } from "react-icons/fa";
 export default function Nav() {
   const [night, setNight] = useState(false);
   return (
-    <div className="2xl:mx-40 xl:mx-20 my-10">
+    <div >
       <nav className="flex justify-between text-[#323231] font-semibold">
         <div>Abu Hanifa</div>
         <div className="flex justify-between gap-10">
