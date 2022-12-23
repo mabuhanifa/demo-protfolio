@@ -5,23 +5,23 @@ import { FaMoon } from "react-icons/fa";
 
 export default function Nav() {
   const [night, setNight] = useState(false);
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
   return (
     <div className="m-10 sm:m-0">
       <nav className="flex flex-col sm:flex-row justify-between text-[#323231] font-semibold">
         <div className="mb-10">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <a href="/">Abu Hanifa</a>
-            <p onClick={()=>setMenu(!menu)}>
+            <div className="sm:hidden" onClick={()=>setMenu(!menu)} >
               {menu ? (
-                <AiOutlineMenu className="text-xl" />
-              ) : (
                 <AiOutlineClose className="text-xl" />
+              ) : (
+                <AiOutlineMenu  className="text-xl" />
               )}
-            </p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between gap-10">
+        <div className={menu?"flex flex-col sm:flex-row justify-between items-center gap-10" : "hidden"}>
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Skills</a>
