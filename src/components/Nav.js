@@ -1,13 +1,26 @@
 import { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { BsSun } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
 
 export default function Nav() {
   const [night, setNight] = useState(false);
+  const [menu, setMenu] = useState(false);
   return (
-    <div >
+    <div className="m-10 sm:m-0">
       <nav className="flex flex-col sm:flex-row justify-between text-[#323231] font-semibold">
-        <div>Abu Hanifa</div>
+        <div className="mb-10">
+          <div className="flex justify-between">
+            <a href="/">Abu Hanifa</a>
+            <p onClick={()=>setMenu(!menu)}>
+              {menu ? (
+                <AiOutlineMenu className="text-xl" />
+              ) : (
+                <AiOutlineClose className="text-xl" />
+              )}
+            </p>
+          </div>
+        </div>
         <div className="flex flex-col sm:flex-row justify-between gap-10">
           <a href="/">Home</a>
           <a href="/">About</a>
