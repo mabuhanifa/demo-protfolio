@@ -14,7 +14,7 @@ function App() {
         <div className="flex justify-between gap-10">
           <a href="/">Home</a>
           <a href="/">About</a>
-          <a href="/">Sills</a>
+          <a href="/">Skills</a>
           <a href="/">Service</a>
           <a href="/">Portfolio</a>
           <a href="/">Contact</a>
@@ -45,7 +45,7 @@ function App() {
             </span>
           </div>
         </div>
-        <section className="mx-20 flex ">
+        <section className="mx-5 xl:mx-20 flex ">
           <div className="w-full my-20">
             <h1 className="text-4xl font-bold">Mohammed Abu Hanifa</h1>
             <p className="text-2xl font-semibold my-2 dash">Web Developer</p>
