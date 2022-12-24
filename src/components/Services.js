@@ -1,11 +1,12 @@
-import React from 'react'
-import Modal from './modals/Modal'
+import React, { useState } from "react";
+import Modal from "./modals/Modal";
 
 export default function Services() {
+  const [modal, setModal] = useState(false);
   return (
     <div>
-        <Modal/>
-
+      <button onClick={() => setModal(true)}>Show</button>
+      <Modal view={modal} setModal={setModal} />
     </div>
-  )
+  );
 }
