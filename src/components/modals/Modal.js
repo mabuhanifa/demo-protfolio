@@ -1,12 +1,13 @@
 import React from "react";
 
-export default function Modal({ view, setModal }) {
+export default function Modal({ view, setModal, data }) {
   if (!view) return null;
   const closeModal = (e) => {
     if (e.target.id === "container") {
       setModal((m) => !m);
     }
   };
+  console.log(data);
   return (
     <div
       id="container"
