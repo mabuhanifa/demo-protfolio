@@ -25,7 +25,7 @@ export default function Services() {
 
   return (
     <>
-      <div className="grid sm:grid-cols-3 place-content-center">
+      <div className="grid sm:grid-cols-3 place-content-center gap-5 ">
         {data.map((data, i) => (
           <Service data={data} key={i} />
         ))}

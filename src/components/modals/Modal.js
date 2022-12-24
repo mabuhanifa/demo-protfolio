@@ -1,4 +1,5 @@
 import React from "react";
+import { RiCloseCircleLine } from "react-icons/ri";
 
 export default function Modal({ view, setModal, data }) {
   if (!view) return null;
@@ -13,14 +14,14 @@ export default function Modal({ view, setModal, data }) {
       className="bg-blue-300 bg-opacity-30 backdrop-blur-sm fixed inset-0 flex justify-center items-center z-15"
       onClick={closeModal}
     >
-      <div className="border border-gray-300 bg-white bg-opacity-80 rounded-xl p-10">
+      <div className="border border-gray-300 bg-white bg-opacity-80 rounded-xl p-10 relative">
         <h1 className="text-2xl">{data}</h1>
 
         <button
-          className="bg-red-500 p-2 rounded text-white"
+          className="rounded text-red-500 absolute top-2 right-2"
           onClick={() => setModal((m) => !m)}
         >
-          Close 
+         <RiCloseCircleLine className="text-2xl"/>
         </button>
       </div>
     </div>
