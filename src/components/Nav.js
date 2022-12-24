@@ -21,7 +21,25 @@ export default function Nav() {
             </div>
           </div>
         </div>
-        <div className={menu?"flex flex-col sm:flex-row justify-between items-center gap-10" : "hidden"}>
+        <div className={"hidden sm:flex flex-col sm:flex-row justify-between items-center gap-10" }>
+          <a href="/">Home</a>
+          <a href="/">About</a>
+          <a href="/">Skills</a>
+          <a href="/">Service</a>
+          <a href="/">Portfolio</a>
+          <a href="/">Contact</a>
+          <div
+            className="flex justify-center items-center cursor-pointer "
+            onClick={() => setNight(!night)}
+          >
+            {night ? (
+              <FaMoon className="inline text-2xl" />
+            ) : (
+              <BsSun className="inline text-2xl" />
+            )}
+          </div>
+        </div>
+        <div className={menu?"sm:hidden flex flex-col sm:flex-row justify-between items-center gap-10": "hidden"}>
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Skills</a>
