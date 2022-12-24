@@ -29,6 +29,7 @@ export default function Services() {
       {data.map((data,i) => (
         <Modal view={modal} setModal={setModal} data={data} key={i}/>
       ))}
+      <Modal view={modal} setModal={setModal} />
     </div>
   );
 }
