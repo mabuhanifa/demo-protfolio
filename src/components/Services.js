@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaServer } from "react-icons/fa";
 import { IoIosApps } from "react-icons/io";
 import { MdWeb } from "react-icons/md";
-import Modal from "./modals/Modal";
+import Service from "./modals/Service";
 export default function Services() {
-  const [modal, setModal] = useState(false);
+  
   const data = [
     {
       name: "Static Website",
@@ -24,12 +24,14 @@ export default function Services() {
   ];
 
   return (
-    <div className="flex justify-center">
-      <button onClick={() => setModal(true)}>Show</button>
-      {data.map((data,i) => (
-        <Modal view={modal} setModal={setModal} data={data} key={i}/>
-      ))}
-      <Modal view={modal} setModal={setModal} />
-    </div>
+    <>
+      <div className="grid sm:grid-cols-3 place-content-center">
+        {data.map((data, i) => (
+          <Service data={data} key={i} />
+        ))}
+        
+      </div>
+      
+    </>
   );
 }
