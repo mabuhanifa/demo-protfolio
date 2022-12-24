@@ -5,10 +5,10 @@ import { TbSend } from "react-icons/tb";
 
 export default function Main() {
   return (
-    <section className="flex my-40">
-      <div className="flex items-center">
+    <section className="p-5 sm:flex sm:my-40">
+      <div className="p-5 flex items-center">
         {/* -----icons----- */}
-        <div className="flex flex-col gap-10 text-2xl mr-20">
+        <div className="flex flex-col gap-10 text-2xl sm:mr-20">
           <span>
             <FiInstagram />
           </span>
@@ -18,6 +18,13 @@ export default function Main() {
           <span>
             <RiFacebookCircleLine />
           </span>
+        </div>
+        <div className="sm:hidden w-full flex justify-center items-center mx-10">
+          <img
+            src="https://avatars.githubusercontent.com/u/90899296?v=4"
+            alt=""
+            className="w-96 rounded-xl"
+          />
         </div>
       </div>
       <section className="mx-5 xl:mx-20 flex ">
@@ -34,7 +41,7 @@ export default function Main() {
             <TbSend className="inline mx-2 text-2xl" />
           </button>
         </div>
-        <div className="w-full flex justify-center items-center mx-10">
+        <div className="hidden w-full sm:flex justify-center items-center mx-10">
           <img
             src="https://avatars.githubusercontent.com/u/90899296?v=4"
             alt=""

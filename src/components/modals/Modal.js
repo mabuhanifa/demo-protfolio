@@ -13,7 +13,7 @@ export default function Modal({ view, setModal }) {
       className="bg-blue-300 bg-opacity-30 backdrop-blur-sm fixed inset-0 flex justify-center items-center z-15"
       onClick={closeModal}
     >
-      <div className="border-[2px] border-blue-300 rounded-xl p-10">
+      <div className="border-[2px] border-blue-300 bg-slate-300 bg-opacity-30 rounded-xl p-10">
         <h1>Modal</h1>
 
         <button
