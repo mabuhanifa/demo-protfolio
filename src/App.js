@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="2xl:mx-40 xl:mx-20 my-10">
+    <div className="dark:bg-black 2xl:px-40 xl:px-20 py-10 ">
       <Nav handleSwitch={handleSwitch} />
       <Main />
       <About />

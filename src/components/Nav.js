@@ -41,9 +41,9 @@ export default function Nav({ handleSwitch }) {
             onClick={switchTheme}
           >
             {night ? (
-              <FaMoon className="inline text-2xl" />
-            ) : (
               <BsSun className="inline text-2xl" />
+            ) : (
+              <FaMoon className="inline text-2xl" />
             )}
           </div>
         </div>
