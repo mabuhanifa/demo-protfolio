@@ -11,7 +11,7 @@ export default function Nav({ handleSwitch }) {
     handleSwitch();
   };
   return (
-    <div className="m-10 sm:m-0">
+    <div className="m-10 sm:m-0 dark:text-gray-300">
       <nav className="flex flex-col sm:flex-row justify-between text-[#323231] font-semibold">
         <div className="mb-10">
           <div className="flex justify-between items-center">

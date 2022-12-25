@@ -5,7 +5,7 @@ import { TbSend } from "react-icons/tb";
 
 export default function Main() {
   return (
-    <section className="p-5 sm:flex sm:my-40">
+    <section className="p-5 sm:flex sm:my-40 dark:text-gray-300">
       <div className="p-5 flex items-center">
         {/* -----icons----- */}
         <div className="flex flex-col gap-10 text-2xl sm:mr-20">

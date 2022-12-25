@@ -11,7 +11,7 @@ export default function Modal({ view, setModal, data }) {
   return (
     <div
       id="container"
-      className="bg-blue-300 bg-opacity-30 backdrop-blur-sm fixed inset-0 flex justify-center items-center z-15"
+      className="bg-blue-300 bg-opacity-30 backdrop-blur-sm fixed inset-0 flex justify-center items-center z-15 dark:text-gray-300"
       onClick={closeModal}
     >
       <div className="border border-gray-300 bg-white bg-opacity-80 rounded-xl p-10 relative">

@@ -5,7 +5,19 @@ import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Services from "./components/Services";
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(null);
+  
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
+
+  const handleSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   useEffect(() => {
     if (theme === "dark") {
@@ -15,12 +27,8 @@ function App() {
     }
   }, [theme]);
 
-  const handleSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
   return (
-    <div className="dark:bg-black 2xl:px-40 xl:px-20 py-10 ">
+    <div className="dark:bg-[#101621] dark:text-gray-300 2xl:px-40 xl:px-20 py-10 ">
       <Nav handleSwitch={handleSwitch} />
       <Main />
       <About />
