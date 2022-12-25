@@ -10,14 +10,16 @@ export default function Service({ data: { name, info, icon } }) {
       <div className="flex justify-center items-center">
         <Icon className="text-8xl text-gray-700" />
       </div>
-      <h1>{name}</h1>
+      <h1 className="text-xl font-bold text-slate-700 my-5">{name}</h1>
       <p>{info}</p>
+
       <button
         onClick={() => setModal(true)}
-        className="border border-gray-500 p-2 my-5 rounded-lg"
+        className="text-gray-800 my-5 border border-gray-500 p-2 rounded bg-gray-200"
       >
-        View More <BsArrowRight className="inline" />{" "}
+        View More <BsArrowRight className="inline text-xl mx-2" />{" "}
       </button>
+
       <Modal view={modal} setModal={setModal} data={name} />
     </div>
   );
